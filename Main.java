@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        WordFinder finder = new WordFinder();
+        String[] files = new String[5];
+        for (int i = 1; i <= 5; i++) {
+            files[i - 1] = "/Users/maksim/IdeaProjects/generateFile/src/text" + i + ".txt";
+        }
+        String words[] = {"IN", "THIS", "TEXT", "THERE", "IS", "NO", "SENSE", "IT", "IS", "JUST", "GENERATED", "NONSENSE"};
+        finder.getOccurrences(files, words, "/Users/maksim/IdeaProjects/consult/src/result.txt");
+    }
+}
